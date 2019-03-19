@@ -8,8 +8,12 @@ class TodoList extends Component {
   }
 
   handleSubmit = e => {
-    const targetValue = e.target.input.value;
     e.preventDefault();
+
+    const targetValue = e.target.input.value;
+
+    if(targetValue === '') return null;
+    
     this.setState(prevState => ({
       todos: [
         ...prevState.todos,
@@ -19,6 +23,7 @@ class TodoList extends Component {
         }
       ]
     }));
+    
     e.target.input.value = null;
   }
 
