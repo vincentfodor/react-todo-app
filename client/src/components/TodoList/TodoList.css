@@ -1,0 +1,13 @@
+.todolist-form-input {
+  width: 100%;
+  padding: 0.66em;
+  font-size: 16pt;
+  border: none;
+  margin: 0 0 1em 0;
+  outline: none;
+  transition: all 0.25s ease-in-out;
+}
+
+.todolist-form-input:focus {
+  background-color: rgba(0, 0, 0, 0.05);
+}

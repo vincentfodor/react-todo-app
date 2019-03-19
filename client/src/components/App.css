@@ -1,0 +1,24 @@
+html {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.app {
+  width: 700px;
+  padding: 2em;
+  background-color: rgb(255, 255, 255);
+  margin: 100px auto 0 auto;
+  box-shadow: 0 6px 4px rgba(0, 0, 0, 0.05);
+}
+
+.app-headline {
+  font-size: 26pt;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0 0 1em 0;
+  color: rgba(0, 0, 0, 0.85)
+}

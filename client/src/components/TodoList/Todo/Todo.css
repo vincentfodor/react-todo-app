@@ -1,0 +1,37 @@
+.todo {
+  display: flex;
+  padding: 1.33em;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.todo-content {
+  font-size: 16pt;
+  margin: 0.33em 0;
+  flex-grow: 1;
+  align-self: center;
+}
+
+.todo-delete-button {
+  align-self: center;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background-color: rgba(255, 0, 0, 0.5);
+  cursor: pointer;
+  border: none;
+}
+
+.todo-delete-button:hover {
+  background-color: rgba(255, 0, 0, 0.7);
+}
+
+.todo-delete-button--hidden {
+  display: none;
+}
+
+.todo--type-red {
+  background-color: rgba(255, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.7);
+}
