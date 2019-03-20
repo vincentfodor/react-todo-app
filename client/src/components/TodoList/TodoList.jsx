@@ -47,7 +47,7 @@ class TodoList extends Component {
     const GET_ALL_TODOS = gql`
       {
         getAllTodos {
-          id
+          _id
           content
         }
       }

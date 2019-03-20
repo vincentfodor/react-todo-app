@@ -6,8 +6,12 @@ export default gql`
     getAllTodos: [Todo]!
   }
 
+  type Mutation {
+    createTodo(content: String!): Todo!
+  }
+
   type Todo {
-    id: ID!
+    _id: ID!
     content: String!
   }
 `

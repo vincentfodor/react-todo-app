@@ -19,7 +19,8 @@
   "homepage": "https://github.com/vincentfodor/react-todo-app#readme",
   "dependencies": {
     "apollo-server": "^2.4.8",
-    "graphql": "^14.1.1"
+    "graphql": "^14.1.1",
+    "mongoose": "^5.4.19"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",

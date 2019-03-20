@@ -1,16 +1,23 @@
+import mongoose from 'mongoose';
+import Todo from './schemas/todo';
 
+mongoose.connect('mongodb://127.0.0.1:27017/react-todo-app', {
+  useNewUrlParser: true
+});
+
+const db = mongoose.connection;
+
+db.on('error', () => console.log('Error: Could not connect to Database'));
+db.once('open', () => console.log('Connected to database...'));
 
 export default class TodoApi {
-  constructor() {
-    this.todos = [
-      {
-        id: 1,
-        content: 'This is the first todo'
-      }
-    ]
+  async getAllTodos() {
+    return await Todo.find({});
   }
 
-  async getAllTodos() {
-    return this.todos
+  async createTodo(todo) {
+    return await Todo.create({
+      content: todo.content
+    })
   }
 }
